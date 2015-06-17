@@ -1,0 +1,25 @@
+import org.springframework.http.HttpStatus;
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<html>
+<head>
+<title>Formulario</title>
+</head>
+<body>
+
+<h1>Hola formulario</h1>
+
+<table>
+	<c:forEach items="${lista}" var="persona">
+	    <tr>
+	    	<td>${persona.nombre}</td>
+	    	<td> ${persona.apellido}</td>
+	    	<td> ${persona.edad}</td>
+	    	<td> ${persona.email}</td>
+    	</tr>
+	</c:forEach>
+</table>
+
+
+</body>
+</html>
